@@ -142,7 +142,7 @@ type GenerateOpts struct {
 	Secret []byte
 	// Digits to request. Defaults to 6.
 	Digits otp.Digits
-	// Algorithm to use for HMAC. Defaults to SHA1.
+	// Algorithm to use for HMAC. Defaults to SHA256.
 	Algorithm otp.Algorithm
 	// Reader to use for generating TOTP Key.
 	Rand io.Reader

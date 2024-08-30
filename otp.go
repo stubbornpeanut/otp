@@ -166,7 +166,7 @@ func (k *Key) Digits() Digits {
 	return DigitsSix
 }
 
-// Algorithm returns the algorithm used or the default (SHA1).
+// Algorithm returns the algorithm used or the default (SHA256).
 func (k *Key) Algorithm() Algorithm {
 	q := k.url.Query()
 
@@ -174,12 +174,12 @@ func (k *Key) Algorithm() Algorithm {
 	switch a {
 	case "md5":
 		return AlgorithmMD5
-	case "sha256":
-		return AlgorithmSHA256
+	case "sha1":
+		return AlgorithmSHA1
 	case "sha512":
 		return AlgorithmSHA512
 	default:
-		return AlgorithmSHA1
+		return AlgorithmSHA256
 	}
 }
 
