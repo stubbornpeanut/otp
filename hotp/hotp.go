@@ -18,8 +18,8 @@
 package hotp
 
 import (
-	"github.com/pquerna/otp"
-	"github.com/pquerna/otp/internal"
+	"github.com/stubbornpeanut/otp"
+	"github.com/stubbornpeanut/otp/internal"
 	"io"
 
 	"crypto/hmac"
